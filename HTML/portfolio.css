@@ -1,0 +1,158 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #f1f1f1;
+    background: #121212;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header {
+    background: linear-gradient(90deg, #333, #000);
+    color: #fff;
+    padding: 2em 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+header.scrolled {
+    background: #000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 2.5em;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 1em;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-family: 'Orbitron', sans-serif;
+}
+
+nav ul li a:hover {
+    color: #1abc9c;
+}
+
+section {
+    padding: 100px 0;
+}
+
+.section {
+    background: #1c1c1c;
+    margin-bottom: 20px;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+footer {
+    background: linear-gradient(90deg, #333, #000);
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+footer p {
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    margin-top: 0;
+    font-family: 'Orbitron', sans-serif;
+    color: #1abc9c;
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Additional styles for futuristic look */
+header h1::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #1abc9c;
+    margin: 0.5em auto 0;
+}
+
+nav ul li a::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #1abc9c;
+    transition: width 0.3s;
+}
+
+nav ul li a:hover::before {
+    width: 100%;
+}
+
+.section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(26, 188, 156, 0.2) 25%, transparent 25%) -50px 0,
+                linear-gradient(225deg, rgba(26, 188, 156, 0.2) 25%, transparent 25%) -50px 0,
+                linear-gradient(315deg, rgba(26, 188, 156, 0.2) 25%, transparent 25%),
+                linear-gradient(45deg, rgba(26, 188, 156, 0.2) 25%, transparent 25%);
+    background-size: 100px 100px;
+    z-index: -1;
+    border-radius: 8px;
+}

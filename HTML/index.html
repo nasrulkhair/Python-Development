@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Data Analysis Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="fade-in">My Data Analysis Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#upload">Upload</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="fade-in">About Me</h2>
+            <p class="fade-in">Hi, I'm [Your Name], a data analyst with expertise in analyzing and interpreting data...</p>
+        </div>
+    </section>
+    
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="fade-in">Projects</h2>
+            <div class="project">
+                <h3 class="fade-in">Project Title</h3>
+                <p class="fade-in">Description of the project...</p>
+            </div>
+            <!-- Add more projects here -->
+        </div>
+    </section>
+    
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="fade-in">Contact</h2>
+            <p class="fade-in">Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        </div>
+    </section>
+
+    <section id="upload" class="section">
+        <div class="container">
+            <h2 class="fade-in">Upload Portfolio Samples</h2>
+            <form action="upload.php" method="post" enctype="multipart/form-data" class="fade-in">
+                <label for="file">Choose file to upload:</label>
+                <input type="file" id="file" name="file">
+                <input type="submit" value="Upload">
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p class="fade-in">&copy; 2024 [Your Name]. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="portfolio.js"></script>
+</body>
+</html>
