@@ -1,18 +1,44 @@
-# importing random number generator
 import random
 
-top_of_range = input("Type a number: ")
-if top_of_range.isdigit():
-    top_of_range = int(top_of_range)
+user_score = 0
+computer_score = 0
+
+options = ["rock", "paper", "scissors"]
+#options = options[0]
+#print(options)
+
+while True:
+    user_input = input("Type Rock/Paper/Scissors or Q to quit: ").lower()
+    if user_input == "q":
+        break
     
-    if top_of_range <= 0:
-        print("Please type a number larger than 0 next time.")
-        quit()
-else:
-    print("Please type a number next time.")
-    quit()
+    if user_input not in options:
+        print("Please enter a valid option :)")
+        continue
+    
+    random_number = random.randint(0,2)
+    # rock - 0, paper - 1, scissors - 2
+    computer_pick = options[random_number]
+    print(f"Computer pick, {computer_pick}." )
+    
+    if user_input == "rock" and computer_pick == "scissors":
+        print("You won!")
+        user_score += 1
+    elif user_input == "paper" and computer_pick == "rock":
+        print("You won!")
+        user_score += 1
+    elif user_input == "scissors" and computer_pick == "paper":
+        print("You won!")
+        user_score += 1
+    elif user_input == computer_pick:
+        print("Its a draw!")
+        user_score += 1
+        computer_score += 1
+    else:
+        print("You lost :(")
+        computer_score += 1
 
-
-#generating random number and store into a variable
-random_number = random.randint(top_of_range)
-print(random_number)
+print(f"You won, {user_score} times.")
+print(f"Computer won, {computer_score} times.")
+print("Goodbye")
+    
