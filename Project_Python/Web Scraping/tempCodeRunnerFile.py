@@ -23,5 +23,4 @@ html = '''
 '''
 
 sel = Selector( text = html )
-paragraphs = sel.xpath("//p/text()").extract()
-print(paragraphs)
+sel.xpath("//p").extract_first()
