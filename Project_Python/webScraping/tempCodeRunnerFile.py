@@ -15,12 +15,19 @@ html = '''
 </html>
 '''
 
-
+'''
 sel = Selector(text=html)
-paragraphs = sel.xpath("//p").extract()  # Recommended method / also can use extract_first
+paragraphs = sel.xpath("//p/text()").getall()  # Recommended method
 print(paragraphs)
+'''
 
 
 
+'''
+#other method
+sel.xpath("//p").extract_first()
+'''
 
-
+#other method
+sel = Selector(text=html)
+sel.xpath("//p").extract_first()
