@@ -11,4 +11,4 @@ def count_words(filepath, words_list):
             n += 1
     return n
 
-count_words("textanalysis.txt", ['cat', 'cats'])
+print(count_words("textanalysis.txt", ["cat", "cats"]))
