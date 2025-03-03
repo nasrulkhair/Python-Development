@@ -12,4 +12,3 @@ nb_negative_words = count_words("hotel-reviews.txt", ["bad", "awful"])
 print("{} positive words.".format(nb_positive_words))
 print("{} negative words.".format(nb_negative_words))
 
-print(help(count_words))
