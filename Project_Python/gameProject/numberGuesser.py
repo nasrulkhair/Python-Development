@@ -14,7 +14,7 @@ else:
 
 
 #generating random number and store into a variable
-random_number = random.randint(0,top_of_range)
+random_number = random.randint(0, top_of_range)
 guesses = 0
 while True:
     guesses += 1
