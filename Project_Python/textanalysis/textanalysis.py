@@ -11,4 +11,3 @@ def count_words(filepath, words_list):
             n += 1
     return n
 
-print(count_words("textanalysis.txt", ["cat", "cats"]))
