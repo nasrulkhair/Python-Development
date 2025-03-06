@@ -1,0 +1,11 @@
+setup.py
+nazpackages/__init__.py
+nazpackages/tempCodeRunnerFile.py
+nazpackages.egg-info/PKG-INFO
+nazpackages.egg-info/SOURCES.txt
+nazpackages.egg-info/dependency_links.txt
+nazpackages.egg-info/top_level.txt
+nazpackages/nazpackages/__init__.py
+nazpackages/nazpackages/textanalysis/__init__.py
+nazpackages/nazpackages/textanalysis/tempCodeRunnerFile.py
+nazpackages/nazpackages/textanalysis/textanalysis.py
