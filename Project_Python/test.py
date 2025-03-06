@@ -1,7 +1,7 @@
 
 print("Script is running..")
 
-from nazpackages.textanalysis import count_words
+from nazpackages.nazpackages.textanalysis import count_words
 
 # Count the number of positive words
 nb_positive_words = count_words("hotel-reviews.txt", ["good", "great"])
