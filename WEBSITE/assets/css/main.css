@@ -112,7 +112,7 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
-		color: #666;
+		color: #0a0a0a;
 		line-height: 1.5em;
 	}
 
@@ -2247,20 +2247,21 @@ input, select, textarea {
 			}
 
 			#main > section.one {
-				background-color: #81918E;
-				background-image: url("../../images/banner.jpg");
+				background-color: #313d3b;
+				background-image: url("https://www.https://images.unsplash.com/photo-1531297484001-80022131f5a1.com/tutorials/wp-content/uploads/sites/2/2022/04/web-developer-portfolio.png");
+				opacity: 1.0;
 			}
 
 			#main > section.two {
-				background-color: #f5fafa;
+				background-color: #bcdddd;
 			}
 
 			#main > section.three {
-				background-color: #ecf1f1;
+				background-color: #d0e0e0;
 			}
 
 			#main > section.four {
-				background-color: #e8edec;
+				background-color: #044e3f;
 			}
 
 /* Wide */
